@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>CSS Changer</title>
+</head>
+<body>
+     <div class="container">
+        <h1>Change the CSS of below image with the help of sliders!</h1>
+        <span class="heading">HTML, CSS and Javascript</span>
+        <div class="controller">
+
+            <!-- For Colors -->
+            <div class="base_color">
+                <label for="color"id="color_label">Base Color:</label>
+                <input 
+                type="color" 
+                name="color"
+                id="color"
+                value="#0000ff"
+                >
+            </div>
+
+            <!-- For Width -->
+            <label for="width">Width</label>
+            <input 
+            name="width"
+            id="width"
+            type="range" 
+            min="0"
+            max="100"
+            value="50"
+            data-sizing="%"
+            >
+
+            <!-- For Width -->
+            <label for="border-radius">Border-Radius</label>
+            <input 
+            name="border-radius"
+            id="border-radius"
+            type="range" 
+            min="0"
+            max="100"
+            value="50"
+            data-sizing="px"
+            >
+
+            <!-- For Padding -->
+            <label for="padding">Padding</label>
+            <input 
+            name="padding"
+            id="padding"
+            type="range" 
+            min="0"
+            max="100"
+            value="50"
+            data-sizing="px"
+            >
+
+            <!-- For Blur -->
+            <label for="blur">Blur</label>
+            <input 
+            name="blur"
+            id="blur"
+            type="range" 
+            min="0"
+            max="100"
+            value="0"
+            data-sizing="px"
+            >
+
+        </div>
+
+        <img src="https://cdn.pixabay.com/photo/2023/08/26/22/44/brewers-blackbird-8215850_640.jpg" alt="Coffee Image from Pixabay"/>
+
+     </div>
+    <script src="script.js"></script>
+</body>
+</html>
